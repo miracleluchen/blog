@@ -1,0 +1,25 @@
+<!-- Blog Entries Column -->
+<div ng-repeat="post in posts" ng-if="posts.length>0">
+  <!-- First Blog Post -->
+  <h2>
+    <a href="/#/post/{{post._id}}">{{post.title}}</a>
+  </h2>
+  <p class="lead">
+    by <a href=javascript:;">{{post.author}}</a>
+  </p>
+  <p><span class="glyphicon glyphicon-time"></span> Posted on {{post.updateDate | date:'medium'}}</p>
+  <hr>
+  <md ng-model="post.bodyDes"></md>
+  <a class="btn btn-primary" href="/#/post/{{post._id}}">Read More <span
+    class="glyphicon glyphicon-chevron-right"></span></a>
+  <hr>
+
+</div>
+<div ng-if="posts.length==0">
+  There is nothing related found...
+</div>
+
+
+
+
+
