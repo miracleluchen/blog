@@ -23,7 +23,7 @@ var getTagList = function (posts) {
 
 router.get("/", function (req, res) {
 
-    var limit = req.query.limit || 0;
+    var limit = parseInt(req.query.limit) || 0;
     var category = req.query.category || 'all';
     Post.getPosts(function (err, posts) {
         if (err) {
