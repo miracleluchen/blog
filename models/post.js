@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 var postSchema = mongoose.Schema({
     title: {type: String, required: true},
     body: {type: String, required: true},
+    bodyDes: {type: String, required: true},
     author: {type: String, required: true},
     createDate: {type: Date, default: Date.now},
     updateDate: {type: Date, default: Date.now},
