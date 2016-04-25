@@ -24,7 +24,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -47,25 +46,7 @@ body {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
 
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 1280px) {
@@ -89,3 +70,24 @@ body {
     border-bottom: 0;
   }
 }
+
+.share{
+  margin-bottom: 20px;
+  .btn-twitter {
+    color: white;
+    background-color: #00acee;
+  }
+  .btn-facebook {
+    color: white;
+    background-color: #3b5998;
+  }
+  .btn-googleplus {
+    color: white;
+    background-color: #e93f2e;
+  }
+  .btn-linkedin {
+    color: white;
+    background-color: #0e76a8;
+  }
+}
+

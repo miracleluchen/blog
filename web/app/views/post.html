@@ -24,7 +24,18 @@
   <p><span class="glyphicon glyphicon-time"></span> Posted on {{post.updateDate | date:'medium'}}</p>
   <hr>
   <!-- Post Content -->
-  <md ng-model="post.body"></md>
+  <div style="min-height: 300px;"><md ng-model="post.body"></md></div>
+  <hr>
+  <div class="share">
+    <!-- Twitter -->
+    <a href="http://twitter.com/home?status={{pageUrl}}" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{pageUrl}}" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url={{pageUrl}}" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary={{pageUrl}}" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+  </div>
 </div>
 
 <div ng-if="post" ng-show="isEditMode">
@@ -36,6 +47,7 @@
 
   <hr>
   <md ng-model="post.body"></md>
+
 </div>
 
 <div ng-if="!post">
