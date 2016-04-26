@@ -18,7 +18,6 @@ angular.module('webApp')
     };
 
     $scope.updatePost = function () {
-      console.log("213");
       $scope.newPost.tags = $scope.newPost.tags.split(",");
       $http.post(CONFIG.API.POSTS, $scope.newPost)
         .then(function () {

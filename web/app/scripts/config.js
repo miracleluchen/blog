@@ -1,7 +1,7 @@
 /**
  * Created by luch on 4/21/16.
  */
-const HOST = 'http://blog.lemontu.com/backend/api';
+const HOST = 'http://localhost:3001/backend/api';
 var GLOBAL = {};
 const CONFIG = {
   "API": {
