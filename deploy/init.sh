@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Please execute the script after installing node, mongodb...
 
 sudo npm install pm2 -g

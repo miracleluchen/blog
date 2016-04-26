@@ -13,7 +13,8 @@
     "angular-mocks": "^1.4.0",
     "angular-md": "^1.0.0",
     "moment": "^2.13.0",
-    "angular-bootstrap-multiselect": "^0.3.5"
+    "angular-bootstrap-multiselect": "^0.3.5",
+    "font-awesome": "^4.6.1"
   },
   "appPath": "app",
   "moduleName": "webApp",

@@ -1,6 +1,7 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browsehappy {
@@ -24,7 +25,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -87,5 +87,34 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+.about-blog {
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.about-me {
+  table {
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+    tr {
+      height: 30px;
+      line-height: 30px;
+      td {
+        text-align: left;
+      }
+      td:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+  .introduction {
+    width: 90%;
+    margin-left: 5%;
+    line-height: 30px;
   }
 }

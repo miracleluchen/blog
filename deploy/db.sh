@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # use admin
 # db.system.users.find()
 # db.createUser({user:'master', pwd:'123456', roles:[{role:"userAdminAnyDatabase", db:"admin"}]});
