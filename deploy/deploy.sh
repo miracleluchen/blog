@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-mkdir /var/www/blog.lemontu.com
+mkdir -p /var/www/blog.lemontu.com
 
-cd ../web
+cd ~/workspace/blog/web
 grunt build
 cp -rf dist/* /var/www/blog.lemontu.com/
+
+pm2 restart 0
+
 
