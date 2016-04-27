@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 mkdir -p /var/www/blog.lemontu.com
 
 cd ../web
