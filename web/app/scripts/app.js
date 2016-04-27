@@ -59,7 +59,6 @@ angular
     $http.get(CONFIG.API.USER)
       .then(function (res) {
         $scope.user = res.data.user;
-        console.log($scope.user);
       })
       .catch(function (error) {
         console.log("error", error);
