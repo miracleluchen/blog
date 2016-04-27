@@ -8,4 +8,3 @@ cp -rf dist/* /var/www/blog.lemontu.com/
 
 pm2 restart 0
 
-
