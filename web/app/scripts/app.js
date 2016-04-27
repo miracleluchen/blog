@@ -17,8 +17,10 @@ angular
     'ngSanitize',
     'ngTouch',
     'yaru22.md',
+    'angulartics',
+    'angulartics.google.analytics'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $analyticsProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

@@ -35,6 +35,9 @@ module.exports = function (config) {
       'bower_components/moment/moment.js',
       'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-bootstrap-multiselect/angular-bootstrap-multiselect.js',
+      'bower_components/SHA-1/sha1.js',
+      'bower_components/angulartics/src/angulartics.js',
+      'bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js',
       // endbower
       'app/scripts/**/*.js',
       'test/mock/**/*.js',
