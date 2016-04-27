@@ -17,8 +17,10 @@ angular
     'ngSanitize',
     'ngTouch',
     'yaru22.md',
+    'angulartics',
+    'angulartics.google.analytics'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $analyticsProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -59,7 +61,6 @@ angular
     $http.get(CONFIG.API.USER)
       .then(function (res) {
         $scope.user = res.data.user;
-        console.log($scope.user);
       })
       .catch(function (error) {
         console.log("error", error);

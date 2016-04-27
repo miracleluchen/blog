@@ -35,7 +35,9 @@ module.exports = function (passport) {
                 User.findOne({'google.id': profile.id}, function (err, user) {
                     if (err)
                         return done(err);
-
+                    if (profile.emails[0].value !== "canice.lu@gmail.com") {
+                        return done(err);
+                    }
                     if (user) {
 
                         // if a user is found, log them in

@@ -13,7 +13,8 @@ angular.module('webApp')
       $scope.newPost = {
         title: "",
         tags: "",
-        body: ""
+        body: "",
+        bodyDes: "",
       };
     };
 
