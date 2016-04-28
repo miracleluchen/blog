@@ -12,7 +12,6 @@ angular.module('webApp')
             $scope.post.tags = $scope.post.tags.join();
             $scope.tags = res.data.tags;
             $rootScope.tags = res.data.tags;
-            $scope.pageUrl = $location.$$absUrl;
           })
           .catch(function (error) {
             console.log("error", error);

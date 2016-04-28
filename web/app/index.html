@@ -9,6 +9,7 @@
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/angular-socialshare/angular-socialshare.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -59,6 +60,19 @@
     <div class="col-md-8" ng-view=""></div>
     <!-- Blog Sidebar Widgets Column -->
     <div class="col-md-4">
+      <div class="share">
+        <!-- Twitter -->
+        <a href="http://twitter.com/home?status=http://blog.lemontu.com" title="Share on Twitter" target="_blank"
+           class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.lemontu.com" title="Share on Facebook"
+           target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+        <!-- Google+ -->
+        <a href="https://plus.google.com/share?url=http://blog.lemontu.com" title="Share on Google+" target="_blank"
+           class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+        <!-- LinkedIn -->
+        <!--<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=http://blog.lemontu.com" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>-->
+      </div>
       <!-- Blog Search Well -->
       <div class="well">
         <h4>Blog Search</h4>
@@ -149,6 +163,7 @@
 <script src="bower_components/SHA-1/sha1.js"></script>
 <script src="bower_components/angulartics/src/angulartics.js"></script>
 <script src="bower_components/angulartics-google-analytics/lib/angulartics-google-analytics.js"></script>
+<script src="bower_components/angular-socialshare/angular-socialshare.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

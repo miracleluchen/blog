@@ -1,9 +1,11 @@
 /**
  * Created by luch on 4/21/16.
  */
-const HOST = 'http://blog.lemontu.com/backend/api';
+const DOMAIN = 'http://blog.lemontu.com/';
+const HOST = DOMAIN + 'backend/api';
 var GLOBAL = {};
 const CONFIG = {
+  "DOMAIN": DOMAIN + '#',
   "API": {
     'USER': HOST + '/user',
     'POSTS': HOST + '/posts',

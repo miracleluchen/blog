@@ -18,7 +18,7 @@ angular
     'ngTouch',
     'yaru22.md',
     'angulartics',
-    'angulartics.google.analytics'
+    'angulartics.google.analytics',
   ])
   .config(function ($routeProvider, $analyticsProvider) {
     $routeProvider
