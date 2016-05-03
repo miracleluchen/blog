@@ -19,9 +19,9 @@ module.exports = Post;
 module.exports.getPosts = function (callback, limit, category) {
     var query = {tags: category};
     if (category == 'all') {
-        Post.find(callback).limit(limit);
+        Post.find(callback).sort({createDate: -1}).limit(limit);
     } else {
-        Post.find(query, callback);
+        Post.find(query, callback).sort({createDate: -1});
     }
 };
 
