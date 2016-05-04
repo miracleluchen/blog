@@ -11,6 +11,7 @@ var postSchema = mongoose.Schema({
     createDate: {type: Date, default: Date.now},
     updateDate: {type: Date, default: Date.now},
     tags: [String],
+    view: Number
 });
 
 var Post = mongoose.model('Post', postSchema);
@@ -26,6 +27,7 @@ module.exports.getPosts = function (callback, limit, category) {
 };
 
 module.exports.getPostById = function (id, callback) {
+    var query = {_id: id};
     Post.findById(id, callback);
 };
 

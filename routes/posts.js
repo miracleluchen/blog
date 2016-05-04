@@ -41,10 +41,21 @@ router.get("/:_id", function (req, res) {
         if (err) {
             res.send(err);
         }
-        Post.getPosts(function (err, posts) {
-            var tags = getTagList(posts);
-            res.json({"post": post, "tags": tags});
-        }, 0, 'all');
+        if (post.view === undefined) {
+            post.view = Math.floor((Math.random() * 100) + 1);
+            ;
+        } else {
+            post.view += 1;
+        }
+        Post.updatePost(req.params._id, post, function (err) {
+            if (err) {
+                res.send(err);
+            }
+            Post.getPosts(function (err, posts) {
+                var tags = getTagList(posts);
+                res.json({"post": post, "tags": tags});
+            }, 0, 'all');
+        });
     });
 
 });
@@ -80,7 +91,7 @@ router.put("/:_id", helpers.isLogin, function (req, res) {
             res.send(err);
         }
         res.json({"post": update});
-    })
+    });
 });
 
 router.delete("/:_id", helpers.isLogin, function (req, res) {

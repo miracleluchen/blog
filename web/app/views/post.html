@@ -20,7 +20,8 @@
     by {{post.author}}
   </p>
   <!-- Date/Time -->
-  <p><span class="glyphicon glyphicon-time"></span> Posted on {{post.updateDate | date:'medium'}}</p>
+  <p><span class="glyphicon glyphicon-time"></span> Posted on {{post.updateDate | date:'medium'}}
+    <span ng-show="post.view > 0" class="views">{{post.view}} views</span></p>
   <hr>
   <!-- Post Content -->
   <div style="min-height: 300px;"><md ng-model="post.body"></md></div>
